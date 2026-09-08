@@ -3,6 +3,8 @@ import { defineConfig, fontProviders } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from "@astrojs/sitemap";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   fonts: [
@@ -26,6 +28,10 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: "https://decker-theme.pages.dev", // change to your domain
-  integrations: [sitemap()]
+
+  // change to your domain
+  site: "https://decker-theme.pages.dev",
+
+  integrations: [sitemap()],
+  adapter: cloudflare()
 });
