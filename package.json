@@ -3,7 +3,8 @@
   "type": "module",
   "version": "0.0.1",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=22.12.0",
+    "pnpm": "11.6.0"
   },
   "scripts": {
     "dev": "astro dev",
@@ -22,13 +23,5 @@
   },
   "devDependencies": {
     "wrangler": "^4.129.1"
-  },
-  "packageManager": "pnpm@11.6.0",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.6.0",
-      "onFail": "download"
-    }
   }
 }
