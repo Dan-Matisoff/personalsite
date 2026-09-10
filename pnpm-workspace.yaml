@@ -4,5 +4,4 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - miniflare@5.20260907.0-alpha
   - wrangler@4.129.1
-packages:
-  - .
+  
